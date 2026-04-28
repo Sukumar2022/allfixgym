@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Goldman', sans-serif;
+}
+
+@theme {
+  /* This defines the marquee animation */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+/* .feature-card{
+  box-shadow: rgba(83, 61, 182, 0.25) 0px 54px 55px, rgba(61, 87, 206, 0.534) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(62, 54, 175, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
